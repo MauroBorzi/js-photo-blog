@@ -13,7 +13,7 @@ main {
 }
 
 h1 {
-  font-size: 70px;
+  font-size: 80px;
 }
 
 /* utility */
@@ -25,6 +25,6 @@ h1 {
 }
 
 .myPadding {
-  padding: 15px 15px 0 15px;
+  padding: 18px 18px 0 18px;
   /* Top, right, bottom, left */
 }

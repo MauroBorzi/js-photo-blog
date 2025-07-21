@@ -13,7 +13,7 @@ axios.get(linkPhoto).then((elem) => {
             <div class="position-absolute top-0 start-50 translate-middle"><img src="./assets/img/pin.svg" alt=""></div>
             <img src="${myPhoto[i].url}" class="card-img-top rounded-0 myPadding img-fluid square-image" alt="...">
             <div class="card-body">
-              <p class="card-text"><h4>${myPhoto[i].title}</h4></p>
+              <p class="card-text"><h5>${myPhoto[i].title}</h5></p>
               <p class="card-text">${myPhoto[i].date}</p>
             </div>
           </div>
