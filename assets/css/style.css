@@ -1,0 +1,29 @@
+/* classi di layout */
+
+body {
+  font-family: 'Edu Tas Beginner', sans-serif;
+}
+
+header {
+  background-image: url(../img/wall.png);
+}
+
+main {
+  background-image: url(../img/cork.png);
+}
+
+h1 {
+  font-size: 70px;
+}
+
+/* utility */
+
+.square-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+}
+
+.myPadding {
+  padding: 15px;
+}
