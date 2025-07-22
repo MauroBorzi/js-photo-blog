@@ -29,6 +29,10 @@ h1 {
   /* Top, right, bottom, left */
 }
 
+.myd-none {
+  display: block;
+}
+
 .font-date {
   font-family: 'Sometype Mono', 'monospace';
 }
@@ -61,4 +65,8 @@ h1 {
   box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.9);
   z-index: 1;
   cursor: pointer;
+}
+
+.myShadow:hover .myd-none {
+  display: none;
 }
