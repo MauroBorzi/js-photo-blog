@@ -26,7 +26,17 @@ axios.get(linkPhoto).then((elem) => {
           </div>
         </div>`
   }
+
+  const cards = document.querySelectorAll(`.card-img-top`)
+
+  cards.forEach((elem) => {
+    elem.addEventListener(`click`, () => {
+      overlay.classList.remove(`d-none`)
+    })
+  })
 })
+
+
 
 
 // alla pressione del bottone viene chiusa la schermata di overlay
