@@ -1,8 +1,12 @@
 // richiamo gli elementi dal DOM
 const imgList = document.getElementById(`img-list`)
+const button = document.getElementById(`close`)
+const overlay = document.querySelector(`.overlay`)
+
 
 // dichiaro le variabili
 const linkPhoto = `https://lanciweb.github.io/demo/api/pictures/`
+
 
 // uso la chiamata axios per richiamare i valori presenti nell'api
 axios.get(linkPhoto).then((elem) => {
@@ -22,4 +26,10 @@ axios.get(linkPhoto).then((elem) => {
           </div>
         </div>`
   }
+})
+
+
+// alla pressione del bottone viene chiusa la schermata di overlay
+button.addEventListener(`click`, () => {
+  overlay.classList.add(`d-none`)
 })

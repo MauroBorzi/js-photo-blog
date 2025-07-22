@@ -31,3 +31,21 @@ h1 {
 .font-date {
   font-family: 'Sometype Mono', 'monospace';
 }
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.center-img {
+  max-width: 60%;
+  max-height: 60%;
+  object-fit: contain;
+}
