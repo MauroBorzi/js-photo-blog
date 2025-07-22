@@ -16,7 +16,7 @@ axios.get(linkPhoto).then((elem) => {
   for (i = 0; i < myPhoto.length; i++) {
     imgList.innerHTML += `
        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card rounded-0 position-relative">
+          <div class="card myShadow rounded-0 position-relative">
             <div class="position-absolute top-0 start-50 translate-middle"><img src="./assets/img/pin.svg" alt=""></div>
             <img src="${myPhoto[i].url}" class="card-img-top rounded-0 myPadding img-fluid square-image" alt="...">
             <div class="card-body">
@@ -27,16 +27,18 @@ axios.get(linkPhoto).then((elem) => {
         </div>`
   }
 
+  // richiamo tutte le foto dal DOM
   const cards = document.querySelectorAll(`.card-img-top`)
 
-  cards.forEach((elem) => {
-    elem.addEventListener(`click`, () => {
+  cards.forEach((elm) => {
+    // creo un evento per ingrandire la foto alla sua pressione
+    elm.addEventListener(`click`, () => {
       overlay.classList.remove(`d-none`)
+      const newImg = elm.src
+      document.getElementById(`new-img`).src = newImg
     })
   })
 })
-
-
 
 
 // alla pressione del bottone viene chiusa la schermata di overlay
